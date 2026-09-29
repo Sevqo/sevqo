@@ -1,0 +1,9 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import '@fontsource-variable/sora'
+import '@fontsource-variable/dm-sans'
+import App from './App'
+import './styles.css'
+import './responsive-fixes.css'
+
+createRoot(document.getElementById('root')!).render(<StrictMode><App/></StrictMode>)
