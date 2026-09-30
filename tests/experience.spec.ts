@@ -32,7 +32,7 @@ test('phone navigation works and the page has no horizontal overflow', async ({ 
   expect(dimensions.page).toBeLessThanOrEqual(dimensions.viewport + 1)
 })
 
-test('Sevqo identity and device theme follow system preference', async ({ page }) => {
+test('Sevqo stays in light mode regardless of device preference', async ({ page }) => {
   await page.emulateMedia({ colorScheme: 'light' })
   await page.goto('/')
   await expect(page).toHaveTitle(/Sevqo/)
@@ -43,14 +43,16 @@ test('Sevqo identity and device theme follow system preference', async ({ page }
   const light = await page.evaluate(() => ({
     page: getComputedStyle(document.documentElement).backgroundColor,
     company: getComputedStyle(document.querySelector('.company-section')!).backgroundColor,
+    scheme: getComputedStyle(document.documentElement).colorScheme,
   }))
   await page.emulateMedia({ colorScheme: 'dark' })
   const dark = await page.evaluate(() => ({
     page: getComputedStyle(document.documentElement).backgroundColor,
     company: getComputedStyle(document.querySelector('.company-section')!).backgroundColor,
+    scheme: getComputedStyle(document.documentElement).colorScheme,
   }))
-  expect(dark.page).not.toBe(light.page)
-  expect(dark.company).not.toBe(light.company)
+  expect(dark).toEqual(light)
+  expect(dark.scheme).toBe('light')
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible()
   const dimensions = await page.evaluate(() => ({ page: document.documentElement.scrollWidth, viewport: window.innerWidth }))
   expect(dimensions.page).toBeLessThanOrEqual(dimensions.viewport + 1)

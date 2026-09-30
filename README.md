@@ -33,7 +33,7 @@ The script starts a temporary local server and checks the desktop and phone layo
 - Scroll-driven, interactive explanations of LeadFlow and AfriScore
 - Animated Sevqo Marketing concept and shared operating principles
 - Responsive mobile navigation and visual scenes
-- Sevqo ribbon identity with electric blue, deep navy and device-responsive light/dark themes
+- Sevqo ribbon identity with electric blue and a consistent light-mode experience
 - Reduced-motion accessibility support
 
 ## Future integration
