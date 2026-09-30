@@ -59,3 +59,16 @@ test('Sevqo stays in light mode regardless of device preference', async ({ page 
   const dimensions = await page.evaluate(() => ({ page: document.documentElement.scrollWidth, viewport: window.innerWidth }))
   expect(dimensions.page).toBeLessThanOrEqual(dimensions.viewport + 1)
 })
+
+test('custom Sevqo identity is used across the site', async ({ page }, info) => {
+  await page.goto('/')
+  const headerBrand = page.getByRole('link', { name: 'Sevqo home' }).first()
+  const mark = headerBrand.locator('.brand-symbol')
+  await expect(mark).toHaveAttribute('src', '/sevqo-mark.svg')
+  await expect(mark).toHaveJSProperty('complete', true)
+  expect(await mark.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0)
+  expect(await headerBrand.locator('.brand-word').evaluate(element => getComputedStyle(element).maskImage)).toContain('sevqo-wordmark.svg')
+  await headerBrand.screenshot({ path: info.outputPath('brand-header.png') })
+  await page.locator('.visual-center').screenshot({ path: info.outputPath('brand-visual.png') })
+  await page.locator('.site-footer .brand').screenshot({ path: info.outputPath('brand-footer.png') })
+})

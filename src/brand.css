@@ -1,4 +1,4 @@
-/* Sevqo identity: blue ribbon, deep navy, and a device-native colour scheme. */
+/* Sevqo identity: reference-shaped blue ribbon and custom wordmark on an always-light site. */
 :root {
   color-scheme: light;
   --ink: #101a36;
@@ -15,9 +15,9 @@
 }
 
 ::selection { background: #89baff; color: #081126; }
-.brand { gap: 9px; }
-.brand-symbol { width: 34px; height: 34px; object-fit: contain; transform: none; }
-.brand-word { font: 660 24px 'Sora Variable', sans-serif; letter-spacing: .12em; }
+.brand { gap: 10px; }
+.brand-symbol { width: 35px; height: 44px; object-fit: contain; transform: none; }
+.brand-word { display: block; width: 113px; height: 24px; flex: none; font-size: 0; line-height: 0; letter-spacing: 0; background: currentColor; -webkit-mask: url('/sevqo-wordmark.svg') center / contain no-repeat; mask: url('/sevqo-wordmark.svg') center / contain no-repeat; }
 h1 em, h2 em { color: var(--brand); }
 .section-tag { color: var(--brand); }
 .section-tag i { background: #2769ff; box-shadow: 0 0 0 5px #dae8ff; }
@@ -33,7 +33,7 @@ h1 em, h2 em { color: var(--brand); }
 .orbit { border-color: #7ea5ff5c; }
 .orbit-one { background: #4167ff16; }
 .visual-center { width: 184px; height: 184px; background: #0c1532; border: 1px solid #688cff75; box-shadow: 0 0 0 16px #3662ff16, 0 24px 50px #0008; }
-.center-v { width: 86px; height: 84px; font-size: 0; background: url('/sevqo-mark.svg') center/contain no-repeat; }
+.center-v { width: 77px; height: 98px; background: url('/sevqo-mark.svg') center/contain no-repeat; }
 .visual-center span { color: #bfd6ff; }
 .floating-card { background: #eef4ff; border-color: #c3d5ff; box-shadow: 0 18px 40px #040b2670; }
 .signal-lime { background: #286af6; }.signal-coral { background: #7161f5; }.signal-blue { background: #168fdd; }
@@ -94,6 +94,14 @@ h1 em, h2 em { color: var(--brand); }
 .footer-main>div>span, .site-footer a:hover { color: #a4c7ff; }
 .footer-main>div:first-child p, .footer-main a:not(.brand), .footer-base { color: #b4c2df; }
 .footer-base { border-color: #344569; }
+.site-footer .brand-symbol { width: 44px; height: 56px; }
+.site-footer .brand-word { width: 143px; height: 30px; }
+
+@media (max-width: 700px) {
+  .brand-symbol { width: 30px; height: 39px; }
+  .brand-word { width: 102px; height: 22px; }
+  .center-v { width: 62px; height: 80px; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .center-v, .brand-symbol { animation: none; }

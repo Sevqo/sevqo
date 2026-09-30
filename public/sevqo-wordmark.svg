@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 724 150" fill="none" role="img" aria-label="SEVQO wordmark">
+  <!-- Custom letterforms: disconnected E cap and extended diagonal Q tail. -->
+  <path d="M119 0H44C19 0 1 16 1 38 1 59 17 70 39 70H85C96 70 103 75 103 84 103 93 95 100 83 100H20L7 122H84C113 122 131 105 131 81 131 58 115 47 92 47H45C33 47 27 42 27 34 27 26 34 22 45 22H106L119 0Z" fill="white"/>
+  <path d="M159 0H271V22H159V0Z" fill="white"/>
+  <path d="M159 47H266V69H185V100H272V122H159V47Z" fill="white"/>
+  <path d="M294 0H321L363 92 406 0H434L375 122H351L294 0Z" fill="white"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M513 0C473 0 445 26 445 61S473 122 513 122 581 96 581 61 553 0 513 0ZM513 22C487 22 471 39 471 61S487 100 513 100 555 83 555 61 539 22 513 22Z" fill="white"/>
+  <path d="M535 88 591 149H562L514 105 535 88Z" fill="white"/>
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M656 0C616 0 588 26 588 61S616 122 656 122 724 96 724 61 696 0 656 0ZM656 22C630 22 614 39 614 61S630 100 656 100 698 83 698 61 682 22 656 22Z" fill="white"/>
+</svg>
