@@ -31,3 +31,27 @@ test('phone navigation works and the page has no horizontal overflow', async ({ 
   const dimensions = await page.evaluate(() => ({ page: document.documentElement.scrollWidth, viewport: window.innerWidth }))
   expect(dimensions.page).toBeLessThanOrEqual(dimensions.viewport + 1)
 })
+
+test('Sevqo identity and device theme follow system preference', async ({ page }) => {
+  await page.emulateMedia({ colorScheme: 'light' })
+  await page.goto('/')
+  await expect(page).toHaveTitle(/Sevqo/)
+  await expect(page.getByRole('link', { name: 'Sevqo home' }).first()).toBeVisible()
+  const mark = page.getByRole('link', { name: 'Sevqo home' }).first().locator('img')
+  await expect(mark).toHaveJSProperty('complete', true)
+  expect(await mark.evaluate((image: HTMLImageElement) => image.naturalWidth)).toBeGreaterThan(0)
+  const light = await page.evaluate(() => ({
+    page: getComputedStyle(document.documentElement).backgroundColor,
+    company: getComputedStyle(document.querySelector('.company-section')!).backgroundColor,
+  }))
+  await page.emulateMedia({ colorScheme: 'dark' })
+  const dark = await page.evaluate(() => ({
+    page: getComputedStyle(document.documentElement).backgroundColor,
+    company: getComputedStyle(document.querySelector('.company-section')!).backgroundColor,
+  }))
+  expect(dark.page).not.toBe(light.page)
+  expect(dark.company).not.toBe(light.company)
+  await expect(page.getByRole('heading', { level: 1 })).toBeVisible()
+  const dimensions = await page.evaluate(() => ({ page: document.documentElement.scrollWidth, viewport: window.innerWidth }))
+  expect(dimensions.page).toBeLessThanOrEqual(dimensions.viewport + 1)
+})

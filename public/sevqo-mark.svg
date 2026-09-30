@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Sevqo mark">
+  <defs>
+    <linearGradient id="upper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#31b1ff"/><stop offset=".52" stop-color="#2872ff"/><stop offset="1" stop-color="#1b33df"/>
+    </linearGradient>
+    <linearGradient id="lower" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop stop-color="#2327d5"/><stop offset=".55" stop-color="#2c51ff"/><stop offset="1" stop-color="#198cff"/>
+    </linearGradient>
+  </defs>
+  <path d="M108 18 91 5a13 13 0 0 0-14-1L22 35C6 44 4 62 19 73l27 18 22-15-29-18 74-40Z" fill="url(#upper)"/>
+  <path d="m56 46 49 31c17 11 17 29-1 39l-52 29-25-17 69-39-61-36 21-7Z" transform="translate(0 -17)" fill="url(#lower)"/>
+  <path d="m38 59 18-13 22 13-22 14-18-14Z" fill="#071333" opacity=".9"/>
+</svg>

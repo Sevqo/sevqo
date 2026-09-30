@@ -1,0 +1,178 @@
+/* Sevqo identity: blue ribbon, deep navy, and a device-native colour scheme. */
+:root {
+  color-scheme: light;
+  --ink: #101a36;
+  --muted: #53647d;
+  --paper: #f5f7ff;
+  --white: #fff;
+  --line: #dbe3f4;
+  --lime: #91c9ff;
+  --blue: #b4d9ff;
+  --coral: #c6c2ff;
+  --brand: #265bf2;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+::selection { background: #89baff; color: #081126; }
+.brand { gap: 9px; }
+.brand-symbol { width: 34px; height: 34px; object-fit: contain; transform: none; }
+.brand-word { font: 660 24px 'Sora Variable', sans-serif; letter-spacing: .12em; }
+h1 em, h2 em { color: var(--brand); }
+.section-tag { color: var(--brand); }
+.section-tag i { background: #2769ff; box-shadow: 0 0 0 5px #dae8ff; }
+.eyebrow { color: #425d9b; }
+.site-header { background: #f5f7ffdf; }
+.site-header-scrolled { box-shadow: 0 1px 0 #1e37611c, 0 14px 35px #101b3512; }
+.header-cta { background: #285df2; }
+.header-cta:hover { background: #1649dc; }
+.hero-copy>p, .hero-footnote, .scroll-note { color: var(--muted); }
+.hero-visual { background: radial-gradient(circle at 78% 80%, #15217d 0, transparent 38%), radial-gradient(circle at 6% 5%, #143d9d 0, transparent 40%), #080d1c; border-color: #263b75; box-shadow: 0 35px 80px #0c1a5a2b; }
+.visual-grid { background-image: linear-gradient(#779fff16 1px,transparent 1px),linear-gradient(90deg,#779fff16 1px,transparent 1px); }
+.visual-head, .hero-visual-foot { color: #c9d8ff; }
+.orbit { border-color: #7ea5ff5c; }
+.orbit-one { background: #4167ff16; }
+.visual-center { width: 184px; height: 184px; background: #0c1532; border: 1px solid #688cff75; box-shadow: 0 0 0 16px #3662ff16, 0 24px 50px #0008; }
+.center-v { width: 86px; height: 84px; font-size: 0; background: url('/sevqo-mark.svg') center/contain no-repeat; }
+.visual-center span { color: #bfd6ff; }
+.floating-card { background: #eef4ff; border-color: #c3d5ff; box-shadow: 0 18px 40px #040b2670; }
+.signal-lime { background: #286af6; }.signal-coral { background: #7161f5; }.signal-blue { background: #168fdd; }
+.running-line { background: #0d1c53; color: #b7d8ff; }
+.company-section { background: #fff; }
+.company-intro-copy p, .company-pillars p { color: var(--muted); }
+.company-pillars article { background: #f5f8ff; border-color: #e1e8f8; }
+.icon-lime { background: #a7c9ff; }.icon-coral { background: #d6ccff; }.icon-blue { background: #abddfa; }
+.portfolio-section { background: #eaf0ff; }
+.portfolio-header p { color: var(--muted); }
+.portfolio-stage { box-shadow: 0 24px 60px #13234d20; }
+.portfolio-nav { background: #f1f5ff; }
+.portfolio-nav button, .portfolio-nav button:first-child { border-color: #dce5f7; }
+.tone-lime { background: #d9e8ff; }.tone-blue { background: #bbd7ff; }.tone-coral { background: #ded6ff; }
+.portfolio-glyph { color: #1648a91c; }
+.story-light { background: #f6f9ff; }.story-dark { background: #0a1531; }
+.story-dark h2 em { color: #8fbaff; }
+.story-step>span { color: #3262d2; }.story-dark .story-step>span { color: #9bbfff; }
+.story-progress button i { background: #3475fa; }
+.story-dark .story-progress button i { background: #79b8ff; }
+.lead-ui { background: #f7faff; border-color: #dae5f5; }
+.ui-brand>span, .ui-conversation.selected, .ui-message.reply span { background: #c5ddff; }
+.ui-score-ring { background: conic-gradient(#5e94ff var(--score),#e5edfa 0); }
+.ui-score-ring:before { background: #f7faff; }
+.ui-pipeline i.on { background: #76a8fb; }
+.score-ui { border-color: #3e5ca1; background: radial-gradient(circle at 50% 20%, #1e3b78, #0b1837 75%); }
+.score-sources>div>span { background: #1c3465; border-color: #4a68aa; }
+.score-sources>div>span.lit { background: #264e9c; border-color: #92bcff; }
+.score-sources .lit i, .score-flow-line i { background: #8dbbff; }
+.score-core { background: #f5f8ff; }
+.score-core-header>span { background: #b6d4ff; }
+.score-bars i { background: #6ca4ff; }
+.score-output i, .score-output strong { color: #a5caff; }
+.marketing-section { background: #edf2fb; }
+.marketing-list, .marketing-list div { border-color: #cbd8ec; }
+.marketing-list span, .availability { color: #536dbd; }
+.marketing-visual { background: #cadbff; border-color: #abc3f2; box-shadow: 0 35px 70px #182f6d24; }
+.marketing-poster { background: #172875; box-shadow: 0 18px 40px #16245156; }
+.marketing-poster>i { color: #91c7ff; }
+.marketing-stack-card { background: #f8faff; border-color: #cbd8f4; }
+.marketing-stack-card span { color: #536fc2; }
+.marketing-stack-card>i, .mini-chart i { background: #809cf1; }
+.marketing-visual-foot { border-color: #9ab3e5; }.marketing-visual-foot span { color: #315be3; }
+.approach-section { background: #fff; }
+.approach-grid article { background: #f6f9ff; border-color: #e2e9f6; }
+.shape-one { color: #628ef0; }.shape-two { color: #8980ed; }.shape-three { color: #5cb5dc; }
+.approach-banner { background: #c3dcff; }
+.outlook-section { background: #e8f0fc; }
+.outlook-rail, .outlook-rail div { border-color: #afc5e3; }
+.outlook-rail div:before { background: #3d74f0; box-shadow: 0 0 0 6px #d4e2fb; }
+.outlook-rail span { color: #345dc0; }
+.final-call { background: radial-gradient(circle at 95% 85%, #192caa, transparent 47%), #07122c; }
+.final-call h2 em { color: #96c9ff; }
+.final-call p { color: #c8d7f6; }
+.final-call-inner>span { color: #b2c9ff; }
+.site-footer { background: #080f24; }
+.site-footer .brand-word { color: #f4f7ff; }
+.footer-main>div>span, .site-footer a:hover { color: #a4c7ff; }
+.footer-main>div:first-child p, .footer-main a:not(.brand), .footer-base { color: #b4c2df; }
+.footer-base { border-color: #344569; }
+
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; --ink: #eef3ff; --muted: #b3c2dd; --paper: #080e20; --white: #101a33; --line: #2b3b62; --lime: #90bfff; --brand: #99beff; color: var(--ink); background: var(--paper); }
+  .site-header { background: #080e20e8; }
+  .site-header-scrolled { box-shadow: 0 1px 0 #b8caff20, 0 14px 35px #01051155; }
+  .desktop-links a:after { background: #a7c6ff; }
+  .header-cta { background: #96bfff; color: #081126; }
+  .header-cta:hover { background: #bad4ff; }
+  .menu-toggle { color: #f2f6ff; }
+  .mobile-menu { background: #142349; }
+  .section-tag { color: #9dc2ff; }.section-tag i { box-shadow: 0 0 0 5px #3156ad; }
+  .eyebrow { color: #9dbbfa; }
+  .hero-visual { border-color: #37579c; }
+  .floating-card { background: #19294e; border-color: #4566a4; color: #f4f7ff; }
+  .under-link { border-color: #c9d8ff; }
+  .arrow-link { border-color: #9ec4ff; background: #a5caff; color: #081126; }
+  .arrow-link b { background: #142550; color: #f4f7ff; }
+  .arrow-link-light { background: #a5caff; color: #081126; }
+  .company-section { background: #0d1832; }
+  .company-pillars article { background: #142342; border-color: #2e426c; }
+  .icon-lime, .icon-coral, .icon-blue { color: #0e1a35; }
+  .portfolio-section { background: #0a1530; }
+  .portfolio-stage { background: #13213e; box-shadow: 0 24px 60px #0006; }
+  .portfolio-nav { background: #111e39; }
+  .portfolio-nav button { color: #b9c8e3; border-color: #30456e; }
+  .portfolio-nav button:first-child { border-color: #30456e; }
+  .portfolio-nav button[aria-selected=true] { background: #203458; color: #f4f7ff; box-shadow: 0 8px 25px #0004; }
+  .tone-lime { background: #1e3a68; }.tone-blue { background: #1b3c74; }.tone-coral { background: #34316e; }
+  .portfolio-glyph { color: #bcd3ff16; }
+  .portfolio-panel .arrow-link { color: #f4f7ff; border-color: #a8c7ff; background: #162b50; }
+  .portfolio-panel .arrow-link b { background: #a5caff; color: #0c1830; }
+  .story-light { background: #0c1831; }.story-dark { background: #071126; }
+  .story-intro p, .story-step p { color: #b9c8de; }
+  .story-dark .story-intro p, .story-dark .story-step p { color: #b9c8de; }
+  .story-step>span { color: #9ebeff; }
+  .story-end { border-color: #3b4e73; }
+  .story-progress button { background: #385075; }
+  .story-step-active { opacity: 1; }
+  .lead-ui { color: #edf3ff; background: #152442; border-color: #3b527c; }
+  .ui-top, .ui-bottom, .ui-sidebar, .ui-main, .ui-main-header, .ui-keyval, .ui-pipeline { border-color: #34496f; }
+  .ui-brand>span { background: #3f70cf; }.ui-brand small, .ui-live, .ui-section-label, .ui-conversation small, .ui-action span, .ui-keyval span { color: #a8b9d4; }
+  .ui-conversation.selected { background: #263d6c; }
+  .ui-channel, .ui-message span { background: #263959; color: #ecf3ff; }
+  .ui-message.reply span { background: #2e59aa; }
+  .ui-action { background: #1d3054; border-color: #3a527c; }
+  .ui-score-ring { background: conic-gradient(#8fb9ff var(--score),#3b4d6d 0); }
+  .ui-score-ring:before { background: #152442; }
+  .ui-pipeline i { background: #354968; }.ui-pipeline i.on { background: #8bb8ff; }
+  .score-ui { background: radial-gradient(circle at 50% 20%, #183064, #08132b 75%); }
+  .score-core { background: #18294b; color: #f1f6ff; }
+  .score-core-header, .permission-row { border-color: #43577a; }
+  .score-core-header>span { color: #101e3a; }
+  .score-core-header small, .score-core-header b, .score-core-content>span, .score-core-content p, .code-block em { color: #b8c9e5; }
+  .code-row, .code-block { background: #243b62; }
+  .code-row b, .code-block b, .permission-row b { color: #a8cbff; }
+  .marketing-section { background: #0d1935; }
+  .marketing-visual { background: #263f74; border-color: #4b69a1; box-shadow: 0 35px 70px #0006; }
+  .marketing-stack-card { background: #172a51; border-color: #5272b4; }
+  .marketing-stack-card span, .availability, .marketing-list span { color: #a9c6ff; }
+  .marketing-visual-foot { border-color: #5977b0; }.marketing-visual-foot span { color: #b5ceff; }
+  .marketing-list, .marketing-list div { border-color: #42577c; }
+  .approach-section { background: #0a1530; }
+  .approach-grid article { background: #152442; border-color: #35496d; }
+  .approach-banner { background: #96bdff; color: #0b1935; }
+  .outlook-section { background: #0d1b3a; }
+  .outlook-rail, .outlook-rail div { border-color: #425d8c; }
+  .outlook-rail div:before { background: #8bb9ff; box-shadow: 0 0 0 6px #274980; }
+  .outlook-rail span { color: #9bc1ff; }
+  .final-call { background: radial-gradient(circle at 95% 85%, #172da0, transparent 45%), #080d20; }
+  .final-orbit { border-color: #a9c5ff4a; }
+  .site-footer { background: #050a18; }
+}
+
+@media (max-width: 980px) and (prefers-color-scheme: dark) {
+  .story-light .story-step { border-color: #344d74; }
+  .story-light .story-step-active { background: #1a3258; border-color: #6e9eed; }
+  .story-dark .story-step-active { background: #1b2d53; border-color: #6e9eed; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .center-v, .brand-symbol { animation: none; }
+}

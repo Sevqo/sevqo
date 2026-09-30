@@ -1,6 +1,6 @@
-# Veris corporate website
+# Sevqo corporate website
 
-The standalone corporate website for Veris, the parent company behind LeadFlow, AfriScore, and Veris Marketing.
+The standalone corporate website for Sevqo, the parent company behind LeadFlow, AfriScore, and Sevqo Marketing.
 
 ## Local development
 
@@ -31,14 +31,14 @@ The script starts a temporary local server and checks the desktop and phone layo
 
 - Expanded company story and three-venture portfolio
 - Scroll-driven, interactive explanations of LeadFlow and AfriScore
-- Animated Veris Marketing concept and shared operating principles
+- Animated Sevqo Marketing concept and shared operating principles
 - Responsive mobile navigation and visual scenes
-- Original editorial identity with warm neutrals, blue, citrus and coral
+- Sevqo ribbon identity with electric blue, deep navy and device-responsive light/dark themes
 - Reduced-motion accessibility support
 
 ## Future integration
 
-- Replace GitHub development links with product destinations when the final domains are available
-- Add a company contact channel when the Veris inbox is configured
+- Replace generic Sevqo GitHub links with product destinations when the renamed repositories are supplied
+- Add a company contact channel when the Sevqo inbox is configured
 - Add production analytics and consent controls
-- Configure hosting for `veris.org` and links to product subdomains
+- Configure hosting for `sevqo.com` and links to product subdomains
