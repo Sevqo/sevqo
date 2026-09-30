@@ -8,6 +8,7 @@ test('the portfolio and scroll stories explain the ventures', async ({ page }) =
   await expect(page.getByRole('tabpanel')).toContainText('A common language for African business information')
 
   await page.locator('#leadflow').scrollIntoViewIfNeeded()
+  await expect(page.locator('#leadflow a[href="https://github.com/Sevqo/leadflow"]')).toBeVisible()
   await page.getByRole('button', { name: 'View 02 / UNDERSTAND' }).click()
   await expect(page.locator('.lead-ui')).toContainText('James M.')
   await expect(page.locator('.lead-ui')).toContainText('Share a tailored proposal')
@@ -15,6 +16,7 @@ test('the portfolio and scroll stories explain the ventures', async ({ page }) =
   await expect(page.locator('.lead-ui')).toContainText('Confirm the walkthrough')
 
   await page.locator('#afriscore').scrollIntoViewIfNeeded()
+  await expect(page.locator('#afriscore a[href="https://github.com/Sevqo/afriscore"]')).toBeVisible()
   await page.getByRole('button', { name: 'View 03 / PROTECT' }).click()
   await expect(page.locator('.score-ui')).toContainText('CONSENT GATE')
   await expect(page.locator('.score-ui')).toContainText('FINANCIAL PROFILE')
